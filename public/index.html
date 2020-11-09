@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Series</title>
+</head>
+
+<body>
+    <header>
+        <h1>Series</h1>
+    </header>
+
+    <main>
+        <div class="formulario-wrapper">
+            <!--  BUSCAR LIBRO  -->
+            <div class="formulario">
+                <h3>Busca una serie</h3>
+                <div class="inline">
+                    <input id="serieSearch" type="text" placeholder="Busca una serie" />
+                    <button onclick="buscarSerie()">BUSCAR</button>
+                </div>
+            </div>
+
+
+            <!--  AÑADIR LIBRO  -->
+            <div class="formulario">
+                <h3>Añade una serie</h3>
+                <div class="inline row">
+                    <input id="tituloAdd" type="text" placeholder="Título" />
+                    <select id="plataformas" onchange="manageChange(event)"">
+                        <option value=" Netflix">Netflix</option>
+                        <option value="HBO">HBO</option>
+                        <option value="AmazonPrime">Amazon Prime Video</option>
+                        <option value="MovistarLite">Movistar+ Lite</option>
+                        <option value="Pluto">Pluto TV</option>
+                        <option value="Disney">Disney+</option>
+                    </select>
+
+                    <input id="puntuacionAdd" type="text" placeholder="Puntuación" />
+
+                    <button onclick="addSerie()">AÑADIR</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="resultado"></div>
+
+
+    </main>
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

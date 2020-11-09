@@ -1,0 +1,114 @@
+body {
+  padding: 10px 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/************************/
+/*      CABECERA       */
+/************************/
+
+header {
+  background: #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 2em;
+  margin-bottom: 1em;
+}
+
+/************************/
+/*      FORMULARIO      */
+/************************/
+
+button {
+  background-color: #69c;
+  padding: .4em 1em;
+  border: 0;
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #669;
+}
+
+.formulario-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.titulo-seccion {
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 1.2em;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  margin-bottom: .8em;
+}
+
+.producto {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: left;
+  /*   border-bottom: 1px solid #ccc; */
+  margin-bottom: 2em;
+}
+
+.producto .info-producto {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+}
+
+.producto h4 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.formulario {
+  padding: 1em;
+  background-color: #f4f4f4;
+  margin-bottom: 1em;
+  min-width: 45%;
+}
+
+.formulario h3 {
+  margin-bottom: .5em;
+}
+
+.formulario input,
+.formulario select {
+  display: block;
+  margin-right: 1em;
+}
+
+.formulario textarea {
+  width: 100%;
+}
+
+.info-producto button {
+  width: 100px;
+  margin-top: 6px;
+}
+
+.serie {
+  margin-bottom: 1em;
+}
